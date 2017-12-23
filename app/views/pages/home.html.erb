@@ -4,8 +4,6 @@
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Vollkorn:400,400i,600,700" rel="stylesheet">
 
   </head>
-
-
     <body>
       <div class="navbar-guyer">
       <!-- Logo -->
@@ -19,7 +17,21 @@
           <a href="" class="navbar-guyer-item navbar-guyer-link">Contact</a>
         </div>
       </div>
-      <h1>Hi, I'm Jared</h1>
-      <p>I provide business strategy and technology advisory</p>
+      <!-- Banner with short intro -->
+        <div class="banner col-lg-12" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.1) 10%, rgba(0,36,61,0.6) 50%), url('<%=image_path "Forest_cover.jpeg" %>');">
+          <div class="banner-content">
+            <h2>Hi, I'm Jared. <br> Strategist, technologist, <br>& entreprenuer.</h2>
+          </div>
+        </div>
+        <!-- About section w/ Picture with description -->
+        <div class="about col-lg-12" style="background-image: url('<%=image_path "Paper_cover.jpg" %>');">
+          <div class="about-content">
+            <%= image_tag "Guyer_profile.jpg", alt: "Jared Avatar" %>
+
+          </div>
+        </div>
+
+        .
+
     </body>
 </html>

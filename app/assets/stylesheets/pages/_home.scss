@@ -1,11 +1,56 @@
 // Specific CSS for your home-page
 
+// main formatting
+
+body {
+  margin: 0 auto;
+  background-color: black;
+}
 
 h1 {
-  font-size: 46px;
-  color: $dark-gray;
+
 }
 p {
-  font-size: 14px;
-  color: $green;
+
+}
+
+// banner section
+.banner {
+  text-align: center;
+  height: 100vh;
+  height: calc(100vh - 70px);
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner h1 {
+  font-size: 72px;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  color: $light-green;
+}
+.banner h2 {
+  font-size: 56px;
+  max-width: 750px;
+  font-weight: lighter;
+  color: $light-gray;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+// about section
+
+.about {
+  height: 100vh;
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+}
+
+.about img {
+  border-radius: 50%;
+  height: 280px;
+  margin-top: 100px;
+  margin-bottm: 100px;
+  box-shadow: 2px 4px 10px #aaaaaa;
 }
