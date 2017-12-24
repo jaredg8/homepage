@@ -4,7 +4,7 @@
 
 body {
   margin: 0 auto;
-  background-color: black;
+  background-color: white;
 }
 
 h1 {
@@ -12,6 +12,30 @@ h1 {
 }
 p {
 
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  display: grid;
+}
+
+@media(max-width: 992px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media(max-width: 768px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media(max-width: 480px) {
+  .container {
+    width: 350px;
+  }
 }
 
 // banner section
@@ -47,10 +71,92 @@ p {
   align-items: center;
 }
 
-.about img {
+.about-content img {
   border-radius: 50%;
   height: 280px;
-  margin-top: 100px;
-  margin-bottm: 100px;
-  box-shadow: 2px 4px 10px #aaaaaa;
+  box-shadow: 2px 4px 10px #212121;
+}
+
+.about-content p {
+  margin-top: 50px;
+  color: black;
+  font-size: 36px;
+}
+
+// about section css grid
+
+  .about-wrapper {
+      display:grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-auto-rows: minmax(100px, auto);
+      grid-gap: 1em;
+      justify-items: center;
+      align-items: center;
+    }
+
+  .about-wrapper > div {
+      padding:1em;
+    }
+
+  .box1 {
+      /*align-self:start;*/
+      grid-column:1;
+      grid-row:1/3;
+    }
+
+  .box1 img {
+      border-radius: 50%;
+      height: 300px;
+    }
+
+  .box2 {
+      /*align-self:end;*/
+      grid-column:2/4;
+      grid-row:1/3;
+    }
+
+  .box2 p {
+      /*align-self:end;*/
+      font-size: 32px;
+      align-self: right;
+      color: #1B2727;
+    }
+
+// skills section
+
+.skills {
+  height: 100vh;
+  background-size: cover !important;
+  dipslay: flex;
+  align-items: center;
+  background-color: white;
+}
+
+// footer
+
+.footer {
+  background: #1B2727;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: #D5DDDFD9;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: #D5DDDF;
+  opacity: 0.95;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 0.5;
+}
+.footer .fa-heart {
+  color: #D23333;
 }
