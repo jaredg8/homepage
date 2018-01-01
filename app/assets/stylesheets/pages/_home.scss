@@ -181,14 +181,14 @@ p {
   height: max-content;
   max-width: 750px;
   background-size: cover !important;
+  color: black;
+  margin-bottom: 1em;
+}
+
+.skills-grid {
   grid-column-gap: 35px;
   grid-row-gap: 20px;
   display: grid;
-  align-items: center;
-  justify-content: center;
-  justify-items: start;
-  color: black;
-  margin-bottom: 3em;
 }
 
 .skills-wrapper h2 {
@@ -262,9 +262,14 @@ p {
   margin-bottom: 50px;
 }
 
-.button-wrap {
+.btn-wrap {
+  margin: auto;
+  margin-top: 3em;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
 }
 
 .btn-resume {
@@ -274,7 +279,8 @@ p {
   font-weight: bold;
   background: $green;
   transition: background 0.3s ease;
-  margin-bottom: 5px;
+  margin-bottom: 50px;
+  box-shadow: 1px 2px $light-green;
 }
 .btn-resume:hover {
   opacity: .8;
