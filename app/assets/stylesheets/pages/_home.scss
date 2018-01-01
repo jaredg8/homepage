@@ -173,14 +173,18 @@ p {
 // skills section
 
 .skills-wrapper {
-  height: max-content;
+  height: 100vh;
   max-width: 750px;
-  margin-left: 100px;
-  margin-right: 100px;
   background-size: cover !important;
   grid-column-gap: 35px;
   grid-row-gap: 20px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  color: black;
   color: black;
 }
 
@@ -192,25 +196,25 @@ p {
   font-size: 16px;
 }
 
-.skill1 {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
+// .skill1 {
+//   grid-column: 1/2;
+//   grid-row: 1/2;
+// }
 
-.skill2 {
-  grid-column: 2/2;
-  grid-row: 1/2;
-}
+// .skill2 {
+//   grid-column: 2/2;
+//   grid-row: 1/2;
+// }
 
-.skill3 {
-  grid-column: 1/2;
-  grid-row: 2/2;
-}
+// .skill3 {
+//   grid-column: 1/2;
+//   grid-row: 2/2;
+// }
 
-.skill4 {
-  grid-column: 2/2;
-  grid-row: 2/2;
-}
+// .skill4 {
+//   grid-column: 2/2;
+//   grid-row: 2/2;
+// }
 
 .skill-icon {
   height: 100px;
@@ -232,15 +236,11 @@ p {
 
 .resume-wrapper {
   height: max-content;
-  max-width: 1000px;
+  max-width: 750px;
   background-size: cover !important;
-  margin-left: 100px;
-  margin-right: 100px;
-  grid-column-gap: 35px;
-  grid-row-gap: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
   color: black;
   margin-bottom: 50px;
