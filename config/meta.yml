@@ -1,0 +1,5 @@
+meta_product_name: "Jared Lee Guyer Homepage"
+meta_title: "Jared Lee Guyer - Freelancer, entrepreneur, product manager, and full-stack developer"
+meta_description: "With 6+ years of experience at Deloitte Consulting, a background in technology, and a strategic mind, Jared can bring great value to your organization's projects."
+meta_image: "jaredguyer.io.jpg"                       # should exist in `app/assets/images/`
+twitter_account: "@jgenghis"   # required for Twitter Cards
