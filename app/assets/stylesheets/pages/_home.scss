@@ -8,10 +8,11 @@ html {
 
 body {
   margin: 0 auto;
+  padding: 0 2em;
   background-color: $light-gray;
   text-align: center;
   display: block;
-  font-size: 100%x;
+  font-size: 100%;
 }
 
 h1 {
@@ -25,36 +26,36 @@ p {
 
 
 
-@media(max-width: 992px) {
-  body {
-    width: 750px;
-    height: max-content;
-  }
-}
+// @media(max-width: 992px) {
+//   body {
+//     width: 750px;
+//     height: max-content;
+//   }
+// }
 
-@media(max-width: 640px) {
-  body {
-    width: 600px;
-    height: max-content;
-  }
-}
+// @media(max-width: 640px) {
+//   body {
+//     width: 600px;
+//     height: max-content;
+//   }
+// }
 
-@media(max-width: 480px) {
-  body {
-    width: 350px;
-    height: max-content;
-  }
-}
+// @media(max-width: 480px) {
+//   body {
+//     width: 350px;
+//     height: max-content;
+//   }
+// }
 
-@media (max-width: 700px) {
-  .resume-wrapper {
-    display: block;
-    .experience {
-      width: 100%;
-      margin: 0 0 10px 0;
-    }
-  }
-}
+// @media (max-width: 700px) {
+//   .resume-wrapper {
+//     display: block;
+//     .experience {
+//       width: 100%;
+//       margin: 0 0 10px 0;
+//     }
+//   }
+// }
 
 // banner section
 .banner {
@@ -64,7 +65,7 @@ p {
   display: grid;
   align-items: center;
   justify-content: center;
-  max-width: none;
+  min-width: none;
 }
 .banner h1 {
   font-size: 3.5em;
