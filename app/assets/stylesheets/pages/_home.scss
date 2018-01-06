@@ -8,10 +8,11 @@ html {
 
 body {
   margin: 0 auto;
+  padding: 0 2em;
   background-color: $light-gray;
   text-align: center;
   display: block;
-  font-size: 100%x;
+  font-size: 100%;
 }
 
 h1 {
@@ -64,7 +65,7 @@ p {
   display: grid;
   align-items: center;
   justify-content: center;
-  max-width: none;
+  min-width: none;
 }
 .banner h1 {
   font-size: 3.5em;
