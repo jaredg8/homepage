@@ -1,375 +1,116 @@
-// Specific CSS for your home-page
-
-// main formatting
-
 html {
-  background-color: white;
+  font-size: 100%;
 }
 
 body {
   margin: 0 auto;
-  padding: 0 2em;
-  background-color: $light-gray;
+  padding: 0;
   text-align: center;
   display: block;
-  font-size: 100%;
 }
 
-h1 {
-
-
-}
-p {
-
-}
-
-
-
-
-// @media(max-width: 992px) {
-//   body {
-//     width: 750px;
-//     height: max-content;
-//   }
-// }
-
-// @media(max-width: 640px) {
-//   body {
-//     width: 600px;
-//     height: max-content;
-//   }
-// }
-
-// @media(max-width: 480px) {
-//   body {
-//     width: 350px;
-//     height: max-content;
-//   }
-// }
-
-// @media (max-width: 700px) {
-//   .resume-wrapper {
-//     display: block;
-//     .experience {
-//       width: 100%;
-//       margin: 0 0 10px 0;
-//     }
-//   }
-// }
-
-// banner section
 .banner {
+  color: white;
   text-align: center;
-  height: calc(100vh - 70px);
+  height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
-  display: grid;
+  display: flex;
   align-items: center;
   justify-content: center;
-  min-width: none;
 }
 .banner h1 {
-  font-size: 3.5em;
-  text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.8);
-  line-height: 1.5;
-  color: $light-gray;
-  text-align: center;
-  max-width: 300px;
+  font-size: 3.125rem;
+  font-weight: bold;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
 }
 .banner h2 {
-  font-size: 2.875em;
-  max-width: 750px;
-  line-height: 1.4;
+  font-size: 2.625rem;
   font-weight: lighter;
-  color: $light-gray;
-  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  margin-bottom: 30px;
-  text-align: center;
+  color: rgb(255, 255, 255);
+  opacity: 0.8;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-// about section
-
-.about {
-  height: 100vh;
-  background-image: linear-gradient(-133deg,$light-gray, #C0C8CA);
-}
-
-// about section css grid
-
-.about-wrapper {
-  height: 100vh;
-  margin-left: 5em;
-  margin-right: 5em;
-  line-height: 1.4;
+.about-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  flex-wrap: no-wrap;
 }
 
-.about-wrapper > div {
-  padding: 1em;
-}
-
-.box-about-image {
-  display: flex;
-  flex-grow: 0;
-  align-items: center;
+.about-image {
   justify-content: center;
-  margin-left: 2em;
-}
-
-.box-about-text {
-  display: flex;
-  flex-grow: 1;
   align-items: center;
-  justify-content: flex-start;
-  margin-right: 2em;
-  max-width: 40em;
+  margin-top: 3em;
 
 }
 
-
-.box-about-image img {
+.about-image img {
   border-radius: 50%;
-  height: 300px;
+  height: 18.75rem;
   box-shadow: 2px 4px 10px #212121;
-
 }
 
-.box-about-text p {
-  /*align-self:end;*/
-  font-size: 22px;
-  color: #1B2727;
-  text-align: center;
-
-}
-
-.box-about-text a {
-  text-decoration: none;
-  color: #1B2727;
-}
-
-.box-about-text a:hover {
-  opacity: .5;
-}
-
-@media (max-width: 640px) {
-  .about-wrapper {
-    height: 40em;
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-   }
-  .box {
-    order:vertical;
-  }
-  .box-about-image {
-    margin-top: 2em;
-  }
-  .box-about-image img {
-    height: 200px;
-  }
-  .box-about-text {
-    justify-content: flex-start;
-    text-align: center;
-    margin-right: 0em;
-  }
-  .box-about-text p {
-    font-size: smaller;
-  }
-}
-
-// skills section
-
-.skills-wrapper {
-  margin: auto;
-  height: max-content;
-  max-width: 750px;
-  background-size: cover !important;
+.about-text {
   color: black;
-  margin-bottom: 1em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 2em;
 }
 
-.skills-grid {
-  grid-column-gap: 35px;
-  grid-row-gap: 20px;
-  display: grid;
+.about-text p {
+  font-size: 1.5rem;
 }
 
-.skills-wrapper h2 {
-  font-size: 24px;
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  background: $blue-gray;
 }
 
-.skills-wrapper p {
-  font-size: 16px;
+.experience-top {
+  margin: 2em 2em;
+  color: black;
 }
 
-.skill1 {
-  grid-column: 1/2;
-  grid-row: 1/2;
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  // flex-wrap: wrap;
+  background: linear-gradient($blue-gray, #DBDBDB, #F2F2F2);
 }
 
-.skill2 {
-  grid-column: 2/2;
-  grid-row: 1/2;
+.skills {
+  color: black;
+  margin: 2em 2em;
+  display: flex;
+
 }
 
-.skill3 {
-  grid-column: 1/2;
-  grid-row: 2/2;
-}
-
-.skill4 {
-  grid-column: 2/2;
-  grid-row: 2/2;
+.skill-title{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .skill-icon {
-  height: 100px;
-  width: 100px;
-  margin-left: 25px;
-}
-
-// Resume section
-
-// .resume-banner {
-//   background-image: linear-gradient(-133deg,$green,$dark-green);
-// }
-
-.resume-banner {
-  color: black;
-  text-align: center;
-  margin-top: 50px;
-
-}
-
-.resume-wrapper {
-  height: max-content;
-  margin: auto;
-  max-width: 1000px;
-  background-size: cover !important;
-  grid-column-gap: 35px;
-  grid-row-gap: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  align-items: flex-start;
-  color: black;
-  margin-bottom: 50px;
-  border-bottom-style: solid;
-  border-bottom-color: $dark-green;
-
-}
-
-.resume-wrapper .experience {
-  width: 32%;
-  height: max-content;
-  margin-bottom: 50px;
-}
-
-.btn-wrap {
-  margin: auto;
-  margin-top: 3em;
-  display: flex;
-  flex-direction: row;
+  align-self: flex-start;
+  order: 1;
+  height: 4em;
+  width: 4em;
   justify-content: center;
-  align-items: center;
-  width: 125px;
 }
 
-.btn-resume {
-  color: $light-gray  ;
-  padding: 10px 15px;
-  border-radius: 4px;
-  font-weight: bold;
-  background: $green;
-  transition: background 0.3s ease;
-  margin-bottom: 50px;
-  box-shadow: 1px 2px $light-green;
+.skill-header {
+  order: 2;
 }
-.btn-resume:hover {
-  opacity: .8;
-  background: $green;
-  text-decoration: none;
-  color: $light-gray  ;
-}
-
-// blog content
-
-
-
-// footer
-
-.footer-banner {
-  text-align: center;
-  margin: auto;
-  height: calc(100vh - 70px);
-  background-size: cover !important;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(-133deg,#4C685C,$dark-green);
-}
-
-.footer-banner h2 {
-  font-size: 2.875em;
-  max-width: 750px;
-  line-height: 1.4;
-  font-weight: lighter;
-  color: $light-gray;
-  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.footer-banner p {
-  font-size: 1.625em;
-  max-width: 750px;
-  line-height: 1.4;
-  font-weight: lighter;
-  color: $light-gray;
-  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.footer-email a {
-  color: $light-gray;
-}
-
-.footer-email a:hover {
-  text-decoration: underline;
-}
-
-.footer-email img {
-  color: white;
-  width: 25px;
-}
-
-.footer-bottom {
-  background: #1B2727;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100px;
-  padding: 0px 50px;
-  color: #D5DDDFD9;
-}
-.footer-links {
-  display: flex;
-  align-items: center;
-}
-.footer-links a {
-  color: #D5DDDF;
-  opacity: 0.95;
-  text-decoration: none;
-  font-size: 24px;
-  padding: 0px 10px;
-}
-.footer-links a:hover {
-  opacity: 0.5;
-}
-.footer-bottom .fa-heart {
-  color: #D23333;
+.skill-text {
+  align-self: flex-end;
+  order: 3;
 }
