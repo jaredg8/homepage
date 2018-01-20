@@ -1,291 +1,31 @@
-// Specific CSS for your home-page
-
-// main formatting
-
 html {
-  background-color: white;
+  font-size: 100%;
 }
 
 body {
   margin: 0 auto;
-  padding: 0 2em;
-  background-color: $light-gray;
+  padding: 0;
   text-align: center;
   display: block;
-  font-size: 100%;
-}
-
-h1 {
-
-
-}
-p {
-
-}
-
-
-
-
-// @media(max-width: 992px) {
-//   body {
-//     width: 750px;
-//     height: max-content;
-//   }
-// }
-
-// @media(max-width: 640px) {
-//   body {
-//     width: 600px;
-//     height: max-content;
-//   }
-// }
-
-// @media(max-width: 480px) {
-//   body {
-//     width: 350px;
-//     height: max-content;
-//   }
-// }
-
-// @media (max-width: 700px) {
-//   .resume-wrapper {
-//     display: block;
-//     .experience {
-//       width: 100%;
-//       margin: 0 0 10px 0;
-//     }
-//   }
-// }
-
-// banner section
-.banner {
-  text-align: center;
-  height: calc(100vh - 70px);
-  background-size: cover !important;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  min-width: none;
-}
-.banner h1 {
-  font-size: 3.5em;
-  text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.8);
-  line-height: 1.5;
-  color: $light-gray;
-  text-align: center;
-  min-width: 500px;
-}
-.banner h2 {
-  font-size: 2.875em;
-  max-width: 750px;
-  line-height: 1.4;
-  font-weight: lighter;
-  color: $light-gray;
-  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-// about section
-
-.about {
-  height: 100vh;
-  background-image: linear-gradient(-133deg,$light-gray, #C0C8CA);
-}
-
-// about section css grid
-
-.about-wrapper {
-  height: 100vh;
-  margin-left: 5em;
-  margin-right: 5em;
-  line-height: 1.4;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
-}
-
-.about-wrapper > div {
-  padding: 1em;
-}
-
-.box-about-image {
-  display: flex;
-  flex-grow: 0;
-  align-items: center;
-  justify-content: center;
-  margin-left: 2em;
-}
-
-.box-about-text {
-  display: flex;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: flex-start;
-  margin-right: 2em;
-  max-width: 40em;
-
-}
-
-
-.box-about-image img {
-  border-radius: 50%;
-  height: 300px;
-  box-shadow: 2px 4px 10px #212121;
-
-}
-
-.box-about-text p {
-  /*align-self:end;*/
-  font-size: 22px;
-  color: #1B2727;
-  text-align: center;
-
-}
-
-.box-about-text a {
-  text-decoration: none;
-  color: #1B2727;
-}
-
-.box-about-text a:hover {
-  opacity: .5;
-}
-
-@media (max-width: 640px) {
-  .about-wrapper {
-    height: 40em;
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-   }
-  .box {
-    order:vertical;
-  }
-  .box-about-image {
-    margin-top: 2em;
-  }
-  .box-about-image img {
-    height: 200px;
-  }
-  .box-about-text {
-    justify-content: flex-start;
-    text-align: center;
-    margin-right: 0em;
-  }
-  .box-about-text p {
-    font-size: smaller;
-  }
-}
-
-// skills section
-
-.skills-wrapper {
-  margin: auto;
-  height: max-content;
-  max-width: 750px;
-  background-size: cover !important;
-  color: black;
-  margin-bottom: 1em;
-}
-
-.skills-grid {
-  grid-column-gap: 35px;
-  grid-row-gap: 20px;
-  display: grid;
-}
-
-.skills-wrapper h2 {
-  font-size: 24px;
-}
-
-.skills-wrapper p {
-  font-size: 16px;
-}
-
-.skill1 {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
-.skill2 {
-  grid-column: 2/2;
-  grid-row: 1/2;
-}
-
-.skill3 {
-  grid-column: 1/2;
-  grid-row: 2/2;
-}
-
-.skill4 {
-  grid-column: 2/2;
-  grid-row: 2/2;
-}
-
-.skill-icon {
-  height: 100px;
-  width: 100px;
-  margin-left: 25px;
-}
-
-// Resume section
-
-// .resume-banner {
-//   background-image: linear-gradient(-133deg,$green,$dark-green);
-// }
-
-.resume-banner {
-  color: black;
-  text-align: center;
-  margin-top: 50px;
-
-}
-
-.resume-wrapper {
-  height: max-content;
-  margin: auto;
-  max-width: 1000px;
-  background-size: cover !important;
-  grid-column-gap: 35px;
-  grid-row-gap: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  align-items: flex-start;
-  color: black;
-  margin-bottom: 50px;
-  border-bottom-style: solid;
-  border-bottom-color: $dark-green;
-
-}
-
-.resume-wrapper .experience {
-  width: 32%;
-  height: max-content;
-  margin-bottom: 50px;
 }
 
 .btn-wrap {
   margin: auto;
-  margin-top: 3em;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 125px;
+  width: 7.9em;
 }
 
 .btn-resume {
   color: $light-gray  ;
-  padding: 10px 15px;
+  padding: .5em .5em;
   border-radius: 4px;
   font-weight: bold;
   background: $green;
   transition: background 0.3s ease;
-  margin-bottom: 50px;
+  margin: 1em 0;
   box-shadow: 1px 2px $light-green;
 }
 .btn-resume:hover {
@@ -295,9 +35,223 @@ p {
   color: $light-gray  ;
 }
 
-// blog content
+.banner {
+  color: white;
+  text-align: center;
+  height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner h1 {
+  font-size: 3.125rem;
+  font-weight: bold;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.banner h2 {
+  font-size: 2.625rem;
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+  opacity: 0.8;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex-wrap: no-wrap;
+}
+
+.about-image {
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+
+}
+
+.about-image img {
+  border-radius: 50%;
+  height: 18.75rem;
+  box-shadow: 2px 4px 10px #212121;
+}
+
+.about-text {
+  color: black;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 2em;
+}
+
+.about-text p {
+  font-size: 1.5rem;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  background: $blue-gray;
+}
+
+.experience-top {
+  margin: 2em 2em .5em;
+  color: black;
+}
+
+// .skills-container {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   min-height: 100vh;
+//   // flex-wrap: wrap;
+// }
+
+// SKILL SECTION
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  background: linear-gradient($blue-gray, #DBDBDB, #F2F2F2);
+
+}
+
+// .skills {
+//   color: black;
+//   margin: 2em 2em;
+//   display: flex;
+
+// }
+
+.skill-title{
+  display: grid;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.skill-icon {
+  grid-column: 3 / span 2;
+  grid-row: 1;
+  justify-items: end;
+  align-items: end;
+  align-content: end;
+  align-self: center;
+  justify-self: center;
+}
+
+.skill-icon img {
+  height: 3.5em;
+  width: 3.5em;
+}
 
 
+
+.skill-header {
+  grid-column: 5/11;
+  grid-row: 1;
+  color: black;
+  text-align: left;
+}
+.skill-text {
+  grid-column: 3/11;
+  grid-row: 2;
+  color: black;
+  text-align: left;
+
+}
+
+.skill-icon-2 {
+  grid-column: 3 / span 2;
+  grid-row: 3;
+  justify-items: end;
+  align-items: end;
+  align-content: end;
+  align-self: center;
+  justify-self: center;
+}
+
+.skill-icon-2 img {
+  height: 4em;
+  width: 4em;
+}
+
+.skill-header-2 {
+  grid-column: 5/11;
+  grid-row: 3;
+  color: black;
+  text-align: left;
+}
+.skill-text-2 {
+  grid-column: 3/11;
+  grid-row: 4;
+  color: black;
+  text-align: left;
+
+}
+
+.skill-icon-3 {
+  grid-column: 3 / span 2;
+  grid-row: 5;
+  justify-items: end;
+  align-items: end;
+  align-content: end;
+  align-self: center;
+  justify-self: center;
+}
+
+.skill-icon-3 img {
+  height: 4em;
+  width: 3.5em;
+}
+
+.skill-header-3 {
+  grid-column: 5/11;
+  grid-row: 5;
+  color: black;
+  text-align: left;
+}
+.skill-text-3 {
+  grid-column: 3/11;
+  grid-row: 6;
+  color: black;
+  text-align: left;
+
+}
+
+.skill-icon-4 {
+  grid-column: 3 / span 2;
+  grid-row: 7;
+  justify-items: end;
+  align-items: end;
+  align-content: end;
+  align-self: center;
+  justify-self: center;
+}
+
+.skill-icon-4 img {
+  height: 4em;
+  width: 3.5em;
+}
+
+.skill-header-4 {
+  grid-column: 5/11;
+  grid-row: 7;
+  color: black;
+  text-align: left;
+}
+.skill-text-4 {
+  grid-column: 3/11;
+  grid-row: 8;
+  color: black;
+  text-align: left;
+
+}
 
 // footer
 
@@ -372,4 +326,10 @@ p {
 }
 .footer-bottom .fa-heart {
   color: #D23333;
+}
+
+.footer-copyright {
+  font-size: .7rem;
+  padding-left: .8em;
+  text-align: center;
 }
