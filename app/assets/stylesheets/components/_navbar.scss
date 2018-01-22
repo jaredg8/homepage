@@ -10,7 +10,7 @@
   justify-content: space-between;
   background-color: $green;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   grid-gap: 10px;
 }
 
@@ -38,7 +38,7 @@
   align-items: center;
   justify-content: space-between;
   margin-right: 1em;
-  grid-column: 3;
+  grid-column: 6;
   justify-self: end;
 }
 
