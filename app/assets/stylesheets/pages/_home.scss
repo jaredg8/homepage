@@ -4,11 +4,11 @@ html {
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   text-align: center;
-  display: block;
-  max-width: 960px;
+  // display: block;
+  // max-width: 960px;
 }
 
 
@@ -348,6 +348,62 @@ body {
 .client1-title {
   grid-column: 4 / span 6;
   grid-row: 3;
+  align-self: center;
+  text-align: left;
+  color: gray;
+
+}
+
+.client2-text {
+  grid-column: 3/11;
+  grid-row: 4;
+  text-align: left;
+}
+
+.client2-avatar {
+  grid-column: 3;
+  grid-row: 5;
+}
+
+.client2-name {
+  grid-column: 4 / span 6;
+  grid-row: 5;
+  text-align: left;
+  font-style: strong;
+  align-self: start;
+}
+
+.client2-title {
+  grid-column: 4 / span 6;
+  grid-row: 5;
+  align-self: center;
+  text-align: left;
+  color: gray;
+
+}
+
+.client3-text {
+  grid-column: 3/11;
+  grid-row: 6;
+  text-align: left;
+}
+
+.client3-avatar {
+  grid-column: 3;
+  grid-row: 7;
+}
+
+.client3-name {
+  grid-column: 4 / span 6;
+  grid-row: 7;
+  text-align: left;
+  font-style: strong;
+  align-self: start;
+}
+
+.client3-title {
+  grid-column: 4 / span 6;
+  grid-row: 7;
   align-self: center;
   text-align: left;
   color: gray;
