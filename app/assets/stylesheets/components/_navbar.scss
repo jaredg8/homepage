@@ -9,11 +9,20 @@
   align-items: center;
   justify-content: space-between;
   background-color: $green;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
 }
 
 /* Logo */
 .navbar-guyer-brand img {
   height: 50px;
+}
+
+/* Logo */
+.navbar-guyer-brand {
+  grid-column: 2;
+  justify-self: start;
 }
 
 /* User Avatar */
@@ -29,6 +38,8 @@
   align-items: center;
   justify-content: space-between;
   margin-right: 1em;
+  grid-column: 3;
+  justify-self: end;
 }
 
 /* Basic navbar item */
@@ -91,4 +102,11 @@
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
 }
+
+ @media (min-width: 840px) {
+  .navbar-guyer-right {
+    grid-column: 9 / span 2;
+  }
+ }
+
 
