@@ -23,10 +23,10 @@ body {
   justify-content: center;
   align-items: center;
   width: 7.9em;
-  grid-column: 2/ span 2;
+  margin-top: 2em 0 0;
+  align-self: center;
+  grid-column: 3 / span 8;
   grid-row: 3;
-  margin-top: -2em 0 0;
-  align-self: start;
 }
 
 .btn-resume {
@@ -92,44 +92,55 @@ body {
 
 // ABOUT SECTION //
 
-.about-container {
+
+
+.intro-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
+  color: black;
+  padding: 2em 0;
 }
 
-.about-image {
+.intro-image {
   justify-content: center;
   align-items: center;
-  margin-top: 3em;
-  grid-column: 1/ span 4;
-  grid-row: 1;
   align-self: left;
-
+  grid-column: 3 / span 8;
+  grid-row: 1;
 }
 
-.about-image img {
+.intro-image img {
   border-radius: 50%;
-  height: 14.75rem;
+  height: 10.75rem;
   box-shadow: 2px 4px 10px #212121;
 
 }
 
-.about-text {
+.intro-text {
   color: black;
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin: 2em 2em;
-  grid-column: 1 / span 4 ;
+  grid-column: 3 / span 8;
   grid-row: 2;
 }
 
-.about-text p {
+.intro-text p {
   font-size: 1.5rem;
 }
 
+.intro-text a {
+  color: $dark-green;
+}
+
+.intro-text a:hover {
+  color: $light-green;
+  text-decoration: none;
+}
+
+// EXPERIENCE SECTION //
 .experience-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -367,7 +378,7 @@ body {
 }
 
 .client2-name {
-  grid-column: 4 / span 6;
+  grid-column: 4 / span 7;
   grid-row: 5;
   text-align: left;
   font-style: strong;
@@ -411,7 +422,7 @@ body {
 
 }
 
-// footer
+// FOOTER //
 
 .footer-banner {
   text-align: center;
@@ -498,28 +509,38 @@ body {
 
  @media (min-width: 840px) {
 
-  .about-image {
-    grid-column: col-start 3 / span 2;
-    grid-row: 2 ;
+  .intro-container {
+    min-height: 100vh;
+  }
+
+  .intro-image {
+    grid-column: 3;
+    grid-row: 2;
     align-self: center;
     justify-self: center;
     margin: 0;
   }
-  .about-text {
-    grid-column: col-start 6 / span 4;
+
+  .intro-image img {
+    height: 18.75em;
+  }
+  .intro-text {
+    grid-column: 5 / span 6;
     grid-row: 2 ;
+    justify-self: center;
+    align-self: center;
   }
   .btn-wrap {
     margin: 0 auto;
-    // display: flex;
-    // flex-direction: row;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 7.9em;
-    grid-column: 5 / span 4;
+    grid-column: 7 / span 2;
     grid-row: 3;
-    margin-top: -2em 0 0;
-    align-self: start;
+    align-self: center;
+    padding: 1em 0;
   }
   .experience1 {
     grid-column: 3 / span 2;
@@ -660,8 +681,100 @@ body {
     grid-row: 4;
     color: black;
     text-align: left;
-
   }
+
+.client-title {
+  grid-column: 3/ span 11;
+  grid-row: 1;
+  text-align: left;
+}
+
+.client1-text {
+  grid-column: 3/ span 2;
+  grid-row: 2;
+  text-align: left;
+}
+
+.client1-avatar {
+  grid-column: 3;
+  grid-row: 3;
+  justify-self: end;
+}
+
+.client1-name {
+  grid-column: 4 / span 2;
+  grid-row: 3;
+  text-align: left;
+  font-style: strong;
+  align-self: start;
+}
+
+.client1-title {
+  grid-column: 4 / span 2;
+  grid-row: 3;
+  align-self: center;
+  text-align: left;
+  color: gray;
+
+}
+
+.client2-text {
+  grid-column: 6/ span 2;
+  grid-row: 2;
+  text-align: left;
+}
+
+.client2-avatar {
+  grid-column: 6;
+  grid-row: 3;
+  justify-self: end;
+}
+
+.client2-name {
+  grid-column: 7 / span 2;
+  grid-row: 3;
+  text-align: left;
+  font-style: strong;
+  align-self: start;
+}
+
+.client2-title {
+  grid-column: 7 / span 2;
+  grid-row: 3;
+  align-self: center;
+  text-align: left;
+  color: gray;
+
+}
+
+.client3-text {
+  grid-column: 9/ span 2;
+  grid-row: 2;
+  text-align: left;
+}
+
+.client3-avatar {
+  grid-column: 9;
+  grid-row: 7;
+  justify-self: end;
+}
+
+.client3-name {
+  grid-column: 10 / span 2;
+  grid-row: 3;
+  text-align: left;
+  font-style: strong;
+  align-self: start;
+}
+
+.client3-title {
+  grid-column: 10 / span 2;
+  grid-row: 3;
+  align-self: center;
+  text-align: left;
+  color: gray;
+
+}
 
 }
 
