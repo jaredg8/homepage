@@ -1,0 +1,502 @@
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111884068-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-111884068-1');
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Vollkorn:400,400i,600,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <style>
+      // Specific CSS for your home-page
+
+// main formatting
+
+html {
+  background-color: white;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: $light-gray;
+  text-align: center;
+  display: block;
+  font-size: 16px;
+}
+
+h1 {
+
+
+}
+p {
+
+}
+
+
+
+
+// @media(max-width: 992px) {
+//   body {
+//     width: 750px;
+//     height: max-content;
+//   }
+// }
+
+// @media(max-width: 640px) {
+//   body {
+//     width: 600px;
+//     height: max-content;
+//   }
+// }
+
+// @media(max-width: 480px) {
+//   body {
+//     width: 350px;
+//     height: max-content;
+//   }
+// }
+
+// @media (max-width: 700px) {
+//   .resume-wrapper {
+//     display: block;
+//     .experience {
+//       width: 100%;
+//       margin: 0 0 10px 0;
+//     }
+//   }
+// }
+
+.banner-section {
+}
+.banner {
+  text-align: center;
+  height: calc(100vh - 70px);
+  background-size: cover !important;
+  align-items: center;
+  justify-content: center;
+  min-width: none;
+}
+.banner-content {
+  font-size: 3.5em;
+  text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.8);
+  line-height: 1.5;
+  color: $light-gray;
+  text-align: center;
+  max-width: 300px;
+  text-align: center;
+}
+.banner h2 {
+  font-size: 2.875em;
+  max-width: 750px;
+  line-height: 1.4;
+  font-weight: lighter;
+  color: $light-gray;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+// about section
+
+.about {
+  height: 100vh;
+  background-image: linear-gradient(-133deg,$light-gray, #C0C8CA);
+}
+
+// about section css grid
+
+
+.about-wrapper > div {
+  padding: 1em;
+}
+
+.box-about-image {
+  display: flex;
+  flex-grow: 0;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2em;
+}
+
+.box-about-text {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 2em;
+  max-width: 40em;
+
+}
+
+
+.box-about-image img {
+  border-radius: 50%;
+  height: 300px;
+  box-shadow: 2px 4px 10px #212121;
+
+}
+
+.box-about-text p {
+  /*align-self:end;*/
+  font-size: 22px;
+  color: #1B2727;
+  text-align: center;
+
+}
+
+.box-about-text a {
+  text-decoration: none;
+  color: #1B2727;
+}
+
+.box-about-text a:hover {
+  opacity: .5;
+}
+
+@media (max-width: 640px) {
+  .about-wrapper {
+    height: 40em;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+   }
+  .box {
+    order:vertical;
+  }
+  .box-about-image {
+    margin-top: 2em;
+  }
+  .box-about-image img {
+    height: 200px;
+  }
+  .box-about-text {
+    justify-content: flex-start;
+    text-align: center;
+    margin-right: 0em;
+  }
+  .box-about-text p {
+    font-size: smaller;
+  }
+}
+
+// skills section
+
+.skills-wrapper {
+  margin: auto;
+  height: max-content;
+  max-width: 750px;
+  background-size: cover !important;
+  color: black;
+  margin-bottom: 1em;
+}
+
+.skills-grid {
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-column-gap: 35px;
+  grid-row-gap: 20px;
+  display: grid;
+}
+
+.skills-wrapper h2 {
+  font-size: 24px;
+}
+
+.skills-wrapper p {
+  font-size: 16px;
+}
+
+.skill1 {
+  grid-column: 2/4;
+  grid-row: 1/4;
+}
+
+.skill2 {
+  grid-column: 2/4;
+  grid-row: 2/4;
+}
+
+.skill3 {
+  grid-column: 2/4;
+  grid-row: 3/4;
+}
+
+.skill4 {
+  grid-column: 2/4;
+  grid-row: 4/4;
+}
+
+.skill-icon {
+  height: 100px;
+  width: 100px;
+  margin-left: 25px;
+}
+
+// Resume section
+
+// .resume-banner {
+//   background-image: linear-gradient(-133deg,$green,$dark-green);
+// }
+
+.resume-banner {
+  color: black;
+  text-align: center;
+  margin-top: 50px;
+
+}
+
+.resume-wrapper {
+  height: max-content;
+  margin: auto;
+  max-width: 1000px;
+  background-size: cover !important;
+  grid-column-gap: 35px;
+  grid-row-gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  color: black;
+  margin-bottom: 50px;
+  border-bottom-style: solid;
+  border-bottom-color: $dark-green;
+
+}
+
+.resume-wrapper .experience {
+  width: 32%;
+  height: max-content;
+  margin-bottom: 50px;
+}
+
+.btn-wrap {
+  margin: auto;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+}
+
+.btn-resume {
+  color: $light-gray  ;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: $green;
+  transition: background 0.3s ease;
+  margin-bottom: 50px;
+  box-shadow: 1px 2px $light-green;
+}
+.btn-resume:hover {
+  opacity: .8;
+  background: $green;
+  text-decoration: none;
+  color: $light-gray  ;
+}
+
+// blog content
+
+
+
+// footer
+
+.footer-banner {
+  text-align: center;
+  margin: auto;
+  height: calc(100vh - 70px);
+  background-size: cover !important;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(-133deg,#4C685C,$dark-green);
+}
+
+.footer-banner h2 {
+  font-size: 2.875em;
+  max-width: 750px;
+  line-height: 1.4;
+  font-weight: lighter;
+  color: $light-gray;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.footer-banner p {
+  font-size: 1.625em;
+  max-width: 750px;
+  line-height: 1.4;
+  font-weight: lighter;
+  color: $light-gray;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.footer-email a {
+  color: $light-gray;
+}
+
+.footer-email a:hover {
+  text-decoration: underline;
+}
+
+.footer-email img {
+  color: white;
+  width: 25px;
+}
+
+.footer-bottom {
+  background: #1B2727;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: #D5DDDFD9;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: #D5DDDF;
+  opacity: 0.95;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 0.5;
+}
+.footer-bottom .fa-heart {
+  color: #D23333;
+}
+
+    </style>
+
+  </head>
+
+  <body>
+    <div class="navbar-guyer">
+      <!-- Logo -->
+      <a href="/" class="navbar-guyer-brand">
+        <%= image_tag "logo.png", alt: "JG Logo"%>
+      </a>
+      <!-- Right Navigation -->
+      <div class="navbar-guyer-right">
+        <a href="https://www.linkedin.com/in/jaredleeguyer" target="_blank" class="navbar-guyer-item navbar-guyer-link">Resume</a>
+        <a href="https://medium.com/@jared_guyer" target="_blank" class="navbar-guyer-item navbar-guyer-link">Blog</a>
+        <a href="mailto:jguyer@jaredguyer.io" class="navbar-guyer-item navbar-guyer-link">Contact</a>
+      </div>
+    </div>
+    <!-- Banner with short intro -->
+    <div class="banner-section">
+    <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.1) 10%, rgba(0,36,61,0.65) 50%), url('<%=image_path "Forest_cover.jpeg" %>');">
+        <div class="banner-content">
+          <h1>Hi, I'm Jared. <br> Strategist, technologist, <br>& entrepreneur.</h1>
+        </div>
+    </div>
+    </div>
+    <!-- About section w/ Picture with description -->
+    <div class="about">
+       <div class="about-wrapper">
+         <div class="box-about-image">
+           <img src="https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/12985548_822061185858_3422673379480614014_n.jpg?oh=f35ba70c7f70875e50507bd0c696ab5c&oe=5ABC7277" alt="jared"></div>
+         <div class="box-about-text">
+          <div class="aligner-text">
+             <p>I’m an experienced business consultant, product and project manager with 6+ years experience at <a href="https://www2.deloitte.com/us/en/services/consulting.html"> Deloitte Consulting LLP </a> & a variety of non-profits. </p>
+             <p> I am skilled in crafting & operationalizing strategy, prototyping & developing technology products, and aligning digital & strategic goals.</p>
+           </div>
+         </div>
+       </div>
+
+     </div>
+     <div class="resume">
+        <div class="resume-banner">
+          <h2>Professional Background</h2>
+          <div class="resume-wrapper">
+            <div class="experience">
+              <h3>Industry</h3>
+              <p>I've worked extensively in public and private sectors including health care, education, research organizations, retail, real estate, and automotive. </p>
+            </div>
+            <div class="experience">
+              <h3>Skills</h3>
+              <p>Proven skills in project & product management, strategic planning, business model and service design, prototyping, and full-stack web development. </p>
+            </div>
+            <div class="experience">
+              <h3>Results</h3>
+              <p>I have led successful scaling of software products, improved fund raising and grant application results, and designed tools to align operations with strategy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skills-wrapper">
+        <div class="skills-grid">
+        <div class="skill1">
+          <div class="skill-icon">
+            <%= image_tag "Strategy_icon.svg", alt:"Strategy Icon" %>
+          </div>
+          <h2>Strategy Development</h2>
+          <p>I can update or perform due diligence on organizational strategy.  After 6 years at Deloitte I’ve seen what works and doesn't across a variety of industries and subject matters</p>
+        </div>
+        <div class="skill2">
+          <div class="skill-icon">
+            <%= image_tag "Technology_icon.svg", alt:"Technology Icon" %>
+          </div>
+          <h2>Technology Advisory</h2>
+          <p>I can assess the feasibility of a technology initiative and how to best integrate new tools and technologies into your operations </p>
+        </div>
+        <div class="skill3">
+          <div class="skill-icon">
+            <%= image_tag "Digital_icon.svg", alt:"Digital Icon" %>
+          </div>
+          <h2>Digital Footprint</h2>
+          <p>I can lead the formation of a digital vision for your organization through identifying digital opportunities and roadmaps </p>
+        </div>
+        <div class="skill4">
+          <div class="skill-icon">
+            <%= image_tag "Writing_icon.svg", alt:"Writing Icon" %>
+          </div>
+          <h2>Content Creation</h2>
+          <p>I can craft content for customer and constituent engagement across various channels </p>
+        </div>
+      </div>
+      <div class="btn-wrap">
+      <a href="mailto:jguyer@jaredguyer.io" class="btn-resume" width="100px">Contact</a>
+      </div>
+    </div>
+    </div>
+    <footer id="contact">
+        <div class="footer-banner">
+          <div class="footer-content">
+          <h2>Let's connect</h2>
+          <p>I’m interested in new opportunities to drive
+          innovation and growth in both the digital and the analog </p>
+          <div class="footer-email">
+            <a href="mailto:jguyer@jaredguyer.io"><i class="fa fa-envelope-o" style="margin-right: 5px"></i>jguyer@jaredguyer.io</a>
+          </div>
+          </div>
+        </div>
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/jaredleeguyer/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://medium.com/@jared_guyer" target="_blank"><i class="fa fa-medium"></i></a>
+          <a href="https://github.com/jaredg8" target="_blank"><i class="fa fa-github"></i></a>
+          <a href="mailto:jguyer@jaredguyer.io" ><i class="fa fa-envelope-o"></i></a>
+        </div>
+        <div class="footer-copyright">
+          Handcrafted with  <i class="fa fa-heart"></i>  from the road
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
